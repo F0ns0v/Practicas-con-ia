@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#game-board {
+    position: relative;
+    height: 300px; /* Cambiamos el tamaño del tablero a 300px */
+    width: 300px; /* Cambiamos el tamaño del tablero a 300px */
+    border: 1px solid black;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.dot {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: #008000; /* Cambiamos el color de la serpiente a verde */
+}
+
+.apple {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: #f00;
+}
+
+#reset-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reset-button:hover {
+    background-color: #0056b3;
+}

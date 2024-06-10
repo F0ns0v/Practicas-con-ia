@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Juego de la Serpiente</title>
+    <style>
+        #game-board {
+            position: relative;
+            height: 400px;
+            width: 400px;
+            border: 1px solid black;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .dot {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            background: #008000; /* Cambiamos el color de la serpiente a verde */
+        }
+        .apple {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            background: #f00;
+        }
+        #controls {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .control-button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .control-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-board"></div>
+    <div id="controls">
+        <button id="up-button" class="control-button">Arriba</button>
+        <button id="down-button" class="control-button">Abajo</button>
+        <button id="left-button" class="control-button">Izquierda</button>
+        <button id="right-button" class="control-button">Derecha</button>
+    </div>
+    <button id="reset-button">Reiniciar Juego</button>
+    <script src="script.js"></script>
+</body>
+</html>
